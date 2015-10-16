@@ -1,0 +1,56 @@
+<section id="sitemap">
+
+	<h3>Sitemap</h3>
+
+	<p>
+		If you want your site's content to be known by search engines like Google, then it's a good idea to provide the search engine (I'll be referring to Google from now on) with a <code>sitemap.xml</code> file.
+	</p>
+
+	<p>
+		Google has a set of <a href="https://www.google.com/webmasters/tools/">Webmaster Tools (GWT)</a> that can help your site have better results on Google's search results.
+	</p>
+
+	<p>
+		Yellowblue auto genarates the <code>sitemap.xml</code> file for you, which you can submit to GWT. Here is <a href="https://support.google.com/webmasters/answer/156184">an artricle from Google</a>, that explains what a sitemap is and why you may or may not need one.
+	</p>
+
+	<p>
+		If your site's base URL is www.myblog.com, your sitemap's url will be <code class="language-markup">www.myblog.com/sitemap.xml</code>. In other words, to get your sitemap's URL, just append <code>sitemap.xml</code> to your sit's base URL.
+	</p>
+
+	<div class="alert-info">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<h3>Do not forget!</h3>
+		<p>
+			Before deploying your site, do not forget to enter your site's base URL in the <code>url</code> variable in the <code>_config.yml</code> file!
+		</p>
+	</div>
+
+	<p>
+		If you want to have a look at the code that generates the sitemap, just open the <code class="language-markup">sitemap.xml</code> file.
+	</p>
+
+	<p>
+		If you want to take control of the sitemap's variables, you can define them in your posts' or pages' Front Matter section, like so:
+	</p>
+
+<pre><code class="language-yaml">sitemap:
+	lastmod: 2015-09-18
+	priority: 0.7
+	changefreq: 'monthly'
+	exclude: 'yes'</code></pre>
+
+	<p>
+		The <code>exclude</code> variable is for pages, whereas the <code>published</code> variable is for posts. So if you don't want a page or a post to be included in the sitemap, just set the appropriate variable to <code>no</code>.
+	</p>
+
+	<p>
+		If you omit the above section, the default values will be used, which are just fine.
+	</p>
+
+	<p>
+		Full credit for the sitemap code goes to <a href="http://davidensinger.com/">David Ensinger</a> and this <a href="http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/">wonderful post</a> of his. Thank you!
+	</p>
+
+</section>

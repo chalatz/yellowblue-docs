@@ -1,0 +1,186 @@
+<section id="tags">
+
+  <h3>Tags</h3>
+
+  <p>
+    The tags functionality is pretty much the same with the categories one. If you have mastered the categories, then you will master the tags in no time.
+  </p>
+
+  <p>
+    With Yellowblue, you can tag your posts. In order to use this feature, no extra plugins are required. All that is needed, is a little manual work on your side. But don't worry, the whole process takes a couple of minutes for each tag.
+  </p>
+
+  <section class="subsection">
+
+    <h4>↪ Tagging Posts</h4>
+
+    <p>
+      In order to tag a post, you will need to do it at the post's Front Matter section, like so:
+    </p>
+
+<pre><code class="language-yaml">---
+layout: post
+title: "Sample Post 1"
+date:   2014-10-26 18:19:27
+tags: demo
+---</code></pre>
+
+    <p>
+      This post has a tag of <code>demo</code>. If you want more than one tags, your Front Matter will look like this:
+    </p>
+
+<pre><code class="language-yaml">---
+layout: post
+title: "Sample Post 1"
+date:   2014-10-26 18:19:27
+tags: demo installation
+---</code></pre>
+
+    <p>
+      Now the post can be found under two tags, <code>demo</code> and <code>installation</code>. Notice that the tag names are separated by a single space.
+    </p>
+
+    <p>
+      Another way to declare your tags, is to have them inside brackets, like so:
+    </p>
+
+<pre><code class="language-yaml">---
+layout: post
+title: "Sample Post 1"
+date:   2014-10-26 18:19:27
+tags: ['demo', 'installation']
+---</code></pre>
+
+    <p>
+      Notice that the tag names are inside quotes and the whole list is wrapped inside brackets.
+    </p>
+
+    <p>
+      If you want a tag name to be consisted of two or more words, use the following format:
+    </p>
+
+<pre><code class="language-yaml">---
+layout: post
+title: "Sample Post 1"
+date:   2014-10-26 18:19:27
+tags: ['hipster ipsum', 'tutorial']
+---</code></pre>
+
+    <p>
+      Get it? Quotes, and the whole list inside brackets.
+    </p>
+
+    <div class="alert-info">
+    	<div class="line1"></div>
+    	<div class="line2"></div>
+    	<h3>Play it safe</h3>
+    	<p>If you are not sure about wich format to choose for your tags list, the safest way is to have the tag names inside quotes and the whole list wrapped inside brackets.</p>
+    </div>
+
+  </section>
+
+  <section class="subsection">
+
+    <h4>↪ Creating the Posts lists per Tag</h4>
+
+    <p>
+      Now, the next thing to do, is to create the page that lists the posts under each tag.
+    </p>
+
+    <p>
+      Say you have a a tag named <code>demo</code>. Under the <code>tag</code> folder, create a subfolder and name it <code>demo</code>. Inside this folder, create a file and name it <code>index.html</code>. Inside this file, copy and paste the following:
+    </p>
+
+<pre class="language-yaml"><code>---
+layout: tags_list
+tag_name: demo
+---
+
+&#123;% for post in site.tags.demo %}
+
+  &#123;% include teaser.html %}
+
+&#123;% endfor %}</code></pre>
+
+    <p>
+      For another tag, just follow the previous steps, assign the tag name to the <code class="language-yaml">tag_name</code> variable and in the <code>for</code> loop, change the tag name, like so:
+    </p>
+
+<pre class="language-ruby"><code>&#123;% for post in site.tags.installation %}</code></pre>
+
+    <p>
+      If for example, your other tag is called <code>installation</code>, your <code>index.html</code> inside the <code>tag/jekyll</code> folder, will have the following contents:
+    </p>
+
+<pre class="language-yaml"><code>---
+layout: tags_list
+tag_name: Installation
+---
+
+&#123;% for post in site.tags.installation %}
+
+  &#123;% include teaser.html %}
+
+&#123;% endfor %}</code></pre>
+
+    <p>
+      To sum up:
+    </p>
+
+    <ol>
+      <li>Assign the tag or the tags to the <code class="language-yaml">tags</code> variable in the post's Front Matter section.</li>
+      <li>Under the <code>tag</code> folder, create a subfolder and give it the tag name.</li>
+      <li>Inside this subfolder, create an <code class="language-bash">index.html</code> file.</li>
+      <li>Copy and paste the code given above, changing both the <code class="language-yaml">tag_name</code> by assigning it the same value as the tag name, and the tag name in the <code>for</code> loop.</li>
+    </ol>
+
+    <div class="alert-info">
+    	<div class="line1"></div>
+    	<div class="line2"></div>
+    	<p>In order to produce URL friendly names out of the tags names, yellowblue uses the <a href="http://jekyllrb.com/docs/templates/#filters">filter</a> <code class="language-yaml">slugify</code>.</p>
+      <p>Just don't get too funky with your tags' names and you will not have any problems.</p>
+    </div>
+
+    <p>
+      What if the tag name is consisted of two or more words?
+    </p>
+
+    <p>
+      Say your tag name is <code>Site Features</code>. The subfolder you will create, will have the name <code>site-features</code>. As you see, you take your tag name, you lowercase it and replace spaces with dashes.
+    </p>
+
+    <p>
+      In the <code>site-features</code> folder, the <code class="language-bash">index.html</code> will look like this:
+    </p>
+
+<pre class="language-yaml"><code>---
+layout: tags_list
+tag_name: 'Site Features'
+---
+
+&#123;% for post in site.tags.['site features'] %}
+
+  &#123;% include teaser.html %}
+
+&#123;% endfor %}</code></pre>
+
+    <p>
+      Just remember to:
+    </p>
+
+    <ul>
+      <li>wrap the <code class="language-yaml">tag_name</code> value inside quotes</li>
+      <li>change the for loop by changing the tag name. Make sure it is lowercased and inside quotes, wrapped in brackets</li>
+    </ul>
+
+    <div class="alert-info">
+    	<div class="line1"></div>
+    	<div class="line2"></div>
+    	<h3>Tip</h3>
+    	<p>Yellowblue auto-generates the tags list for you. If you use the tags list block, after you add a tag in a post, refresh and check the tags list.</p>
+      <p>Your new tag will be there as a link. If you check the URL, the part after <code class="language-markup">tag/</code>, is the name of the folder you will create, under the <code>tag</code> folder.</p>
+    </div>
+
+  </section>
+
+</section>

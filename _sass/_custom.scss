@@ -1,0 +1,33 @@
+// Place your custom code here...
+
+.toc-content {
+  max-width: 66em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subsection {
+  margin-left: 3em;
+}
+
+.toc-table {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  tr {
+    text-align: center;
+  }
+  td {
+    padding: 0;
+  }
+  a {
+    display: block;
+    padding: .5em;
+    color: $font-color;
+    &:hover {
+      text-decoration: none !important;
+      background-color: $gray;
+      color: #fff;
+    }
+  }
+}

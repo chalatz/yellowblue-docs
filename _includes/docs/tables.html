@@ -1,0 +1,556 @@
+<section id="tables">
+
+  <h3>Tables</h3>
+
+  <p>
+    I really like the <a href="http://purecss.io/tables/">tables</a> from <a href="http://purecss.io/">Pure.css</a>, so Yellowblue uses these tables.
+  </p>
+
+  <p>
+    Yellowblue's tables are responsive, using the simple <code>overflow</code> method. This means that if the table is wider than the screen, you can horizontally scroll the table, in order to see its hidden content.
+  </p>
+
+  <p>
+    Yellowblue tables use the markup from <a href="http://purecss.io/">Pure.css</a>, so please <a href="http://purecss.io/tables/">visit this page</a> in order to see what kinds of tables are supported. If you want your tables to be responsive, you must place them inside a container with a class of <code class="language-markup">table-container</code>.
+  </p>
+
+  <p>
+    Here is an example of a responsive table with horizontal borders, along with its code:
+  </p>
+
+  <div class="row">
+    <div class="table-container">
+			<table class="pure-table pure-table-horizontal">
+			    <thead>
+			        <tr>
+			            <th>#</th>
+			            <th>Make</th>
+			            <th>Model</th>
+			            <th>Year</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>1</td>
+			            <td>Honda</td>
+			            <td>Accord</td>
+			            <td>2009</td>
+			        </tr>
+			        <tr>
+			            <td>2</td>
+			            <td>Toyota</td>
+			            <td>Camry</td>
+			            <td>2012</td>
+			        </tr>
+			        <tr>
+			            <td>3</td>
+			            <td>Hyundai</td>
+			            <td>Elantra</td>
+			            <td>2010</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+  </div>
+
+<pre><code class="language-markup">&lt;div class="table-container">
+	&lt;table class="pure-table pure-table-horizontal">
+			&lt;thead>
+					&lt;tr>
+							&lt;th>#&lt;/th>
+							&lt;th>Make&lt;/th>
+							&lt;th>Model&lt;/th>
+							&lt;th>Year&lt;/th>
+					&lt;/tr>
+			&lt;/thead>
+			&lt;tbody>
+					&lt;tr>
+							&lt;td>1&lt;/td>
+							&lt;td>Honda&lt;/td>
+							&lt;td>Accord&lt;/td>
+							&lt;td>2009&lt;/td>
+					&lt;/tr>
+					&lt;tr>
+							&lt;td>2&lt;/td>
+							&lt;td>Toyota&lt;/td>
+							&lt;td>Camry&lt;/td>
+							&lt;td>2012&lt;/td>
+					&lt;/tr>
+					&lt;tr>
+							&lt;td>3&lt;/td>
+							&lt;td>Hyundai&lt;/td>
+							&lt;td>Elantra&lt;/td>
+							&lt;td>2010&lt;/td>
+					&lt;/tr>
+			&lt;/tbody>
+	&lt;/table>
+&lt;/div></pre></code>
+
+<h4>↪ Table Headings Color Variations</h4>
+
+<p>
+	Yellowblue offers some ready to use color variations for the headings of your tables. You can apply them by using the following classes:
+</p>
+
+<ul>
+	<li>
+		<strong>blue-var:</strong> blue background, yellow text
+	</li>
+	<li>
+		<strong>light-blue-var:</strong> light-blue background, black text
+	</li>
+	<li>
+		<strong>yellow:</strong> yellow background, black text
+	</li>
+</ul>
+
+<p>
+	See below the tables with their color variations and the code that creates them:
+</p>
+
+<div class="row">
+
+	<div class="half-width">
+		<h3>Default Table</h3>
+		<div class="table-container">
+			<table class="pure-table">
+			    <thead>
+			        <tr>
+			            <th>#</th>
+			            <th>Make</th>
+			            <th>Model</th>
+			            <th>Year</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>1</td>
+			            <td>Honda</td>
+			            <td>Accord</td>
+			            <td>2009</td>
+			        </tr>
+			        <tr>
+			            <td>2</td>
+			            <td>Toyota</td>
+			            <td>Camry</td>
+			            <td>2012</td>
+			        </tr>
+			        <tr>
+			            <td>3</td>
+			            <td>Hyundai</td>
+			            <td>Elantra</td>
+			            <td>2010</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+
+<pre><code class="language-markup">&lt;div class="table-container">
+	&lt;table class="pure-table">
+	    &lt;thead>
+	        &lt;tr>
+	            &lt;th>#&lt;/th>
+	            &lt;th>Make&lt;/th>
+	            &lt;th>Model&lt;/th>
+	            &lt;th>Year&lt;/th>
+	        &lt;/tr>
+	    &lt;/thead>
+	    &lt;tbody>
+	        &lt;tr>
+	            &lt;td>1&lt;/td>
+	            &lt;td>Honda&lt;/td>
+	            &lt;td>Accord&lt;/td>
+	            &lt;td>2009&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>2&lt;/td>
+	            &lt;td>Toyota&lt;/td>
+	            &lt;td>Camry&lt;/td>
+	            &lt;td>2012&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>3&lt;/td>
+	            &lt;td>Hyundai&lt;/td>
+	            &lt;td>Elantra&lt;/td>
+	            &lt;td>2010&lt;/td>
+	        &lt;/tr>
+	    &lt;/tbody>
+	&lt;/table>
+&lt;/div></code></pre>
+	</div>
+
+	<div class="half-width">
+		<h3>Blue-var Table</h3>
+		<div class="table-container">
+			<table class="pure-table blue-var">
+			    <thead>
+			        <tr>
+			            <th>#</th>
+			            <th>Make</th>
+			            <th>Model</th>
+			            <th>Year</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>1</td>
+			            <td>Honda</td>
+			            <td>Accord</td>
+			            <td>2009</td>
+			        </tr>
+			        <tr>
+			            <td>2</td>
+			            <td>Toyota</td>
+			            <td>Camry</td>
+			            <td>2012</td>
+			        </tr>
+			        <tr>
+			            <td>3</td>
+			            <td>Hyundai</td>
+			            <td>Elantra</td>
+			            <td>2010</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+
+<pre><code class="language-markup">&lt;div class="table-container">
+	&lt;table class="pure-table blue-var">
+	    &lt;thead>
+	        &lt;tr>
+	            &lt;th>#&lt;/th>
+	            &lt;th>Make&lt;/th>
+	            &lt;th>Model&lt;/th>
+	            &lt;th>Year&lt;/th>
+	        &lt;/tr>
+	    &lt;/thead>
+	    &lt;tbody>
+	        &lt;tr>
+	            &lt;td>1&lt;/td>
+	            &lt;td>Honda&lt;/td>
+	            &lt;td>Accord&lt;/td>
+	            &lt;td>2009&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>2&lt;/td>
+	            &lt;td>Toyota&lt;/td>
+	            &lt;td>Camry&lt;/td>
+	            &lt;td>2012&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>3&lt;/td>
+	            &lt;td>Hyundai&lt;/td>
+	            &lt;td>Elantra&lt;/td>
+	            &lt;td>2010&lt;/td>
+	        &lt;/tr>
+	    &lt;/tbody>
+	&lt;/table>
+&lt;/div></code></pre>
+	</div>
+
+</div>
+
+<div class="row">
+
+	<div class="half-width">
+		<h3>Light-blue-var Table</h3>
+		<div class="table-container">
+			<table class="pure-table light-blue-var">
+			    <thead>
+			        <tr>
+			            <th>#</th>
+			            <th>Make</th>
+			            <th>Model</th>
+			            <th>Year</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>1</td>
+			            <td>Honda</td>
+			            <td>Accord</td>
+			            <td>2009</td>
+			        </tr>
+			        <tr>
+			            <td>2</td>
+			            <td>Toyota</td>
+			            <td>Camry</td>
+			            <td>2012</td>
+			        </tr>
+			        <tr>
+			            <td>3</td>
+			            <td>Hyundai</td>
+			            <td>Elantra</td>
+			            <td>2010</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+
+<pre><code class="language-markup">&lt;div class="table-container">
+	&lt;table class="pure-table light-blue-var>
+	    &lt;thead>
+	        &lt;tr>
+	            &lt;th>#&lt;/th>
+	            &lt;th>Make&lt;/th>
+	            &lt;th>Model&lt;/th>
+	            &lt;th>Year&lt;/th>
+	        &lt;/tr>
+	    &lt;/thead>
+	    &lt;tbody>
+	        &lt;tr>
+	            &lt;td>1&lt;/td>
+	            &lt;td>Honda&lt;/td>
+	            &lt;td>Accord&lt;/td>
+	            &lt;td>2009&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>2&lt;/td>
+	            &lt;td>Toyota&lt;/td>
+	            &lt;td>Camry&lt;/td>
+	            &lt;td>2012&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>3&lt;/td>
+	            &lt;td>Hyundai&lt;/td>
+	            &lt;td>Elantra&lt;/td>
+	            &lt;td>2010&lt;/td>
+	        &lt;/tr>
+	    &lt;/tbody>
+	&lt;/table>
+&lt;/div></code></pre>
+	</div>
+
+	<div class="half-width">
+		<h3>Yellow-var Table</h3>
+		<div class="table-container">
+			<table class="pure-table yellow-var">
+			    <thead>
+			        <tr>
+			            <th>#</th>
+			            <th>Make</th>
+			            <th>Model</th>
+			            <th>Year</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>1</td>
+			            <td>Honda</td>
+			            <td>Accord</td>
+			            <td>2009</td>
+			        </tr>
+			        <tr>
+			            <td>2</td>
+			            <td>Toyota</td>
+			            <td>Camry</td>
+			            <td>2012</td>
+			        </tr>
+			        <tr>
+			            <td>3</td>
+			            <td>Hyundai</td>
+			            <td>Elantra</td>
+			            <td>2010</td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div>
+
+<pre><code class="language-markup">&lt;div class="table-container">
+	&lt;table class="pure-table yellow-var">
+	    &lt;thead>
+	        &lt;tr>
+	            &lt;th>#&lt;/th>
+	            &lt;th>Make&lt;/th>
+	            &lt;th>Model&lt;/th>
+	            &lt;th>Year&lt;/th>
+	        &lt;/tr>
+	    &lt;/thead>
+	    &lt;tbody>
+	        &lt;tr>
+	            &lt;td>1&lt;/td>
+	            &lt;td>Honda&lt;/td>
+	            &lt;td>Accord&lt;/td>
+	            &lt;td>2009&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>2&lt;/td>
+	            &lt;td>Toyota&lt;/td>
+	            &lt;td>Camry&lt;/td>
+	            &lt;td>2012&lt;/td>
+	        &lt;/tr>
+	        &lt;tr>
+	            &lt;td>3&lt;/td>
+	            &lt;td>Hyundai&lt;/td>
+	            &lt;td>Elantra&lt;/td>
+	            &lt;td>2010&lt;/td>
+	        &lt;/tr>
+	    &lt;/tbody>
+	&lt;/table>
+&lt;/div></code></pre>
+	</div>
+
+</div>
+
+	<h4>↪ Customize your tables</h4>
+
+	<p>
+		As with modules, you can customize your tables' headings as well. You can use Yellowblue's <a href="#variations">color variations</a>. Here are a couple of examples:
+	</p>
+
+	<div class="row">
+
+		<div class="half-width">
+			<h3>Full width Striped Table (Dark red background with yellow text)</h3>
+				<div class="table-container">
+					<table class="pure-table pure-table-striped full-width">
+					    <thead class="bg-dark-red text-yellow">
+					        <tr>
+					            <th>#</th>
+					            <th>Make</th>
+					            <th>Model</th>
+					            <th>Year</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+					            <td>1</td>
+					            <td>Honda</td>
+					            <td>Accord</td>
+					            <td>2009</td>
+					        </tr>
+					        <tr>
+					            <td>2</td>
+					            <td>Toyota</td>
+					            <td>Camry</td>
+					            <td>2012</td>
+					        </tr>
+					        <tr>
+					            <td>3</td>
+					            <td>Hyundai</td>
+					            <td>Elantra</td>
+					            <td>2010</td>
+					        </tr>
+					    </tbody>
+					</table>
+				</div>
+
+<pre><code class="language-markup">&lt;div class="table-container">
+	&lt;table class="pure-table pure-table-striped full-width">
+			&lt;thead class="bg-dark-red text-yellow">
+					&lt;tr>
+							&lt;th>#&lt;/th>
+							&lt;th>Make&lt;/th>
+							&lt;th>Model&lt;/th>
+							&lt;th>Year&lt;/th>
+					&lt;/tr>
+			&lt;/thead>
+			&lt;tbody>
+					&lt;tr>
+							&lt;td>1&lt;/td>
+							&lt;td>Honda&lt;/td>
+							&lt;td>Accord&lt;/td>
+							&lt;td>2009&lt;/td>
+					&lt;/tr>
+					&lt;tr>
+							&lt;td>2&lt;/td>
+							&lt;td>Toyota&lt;/td>
+							&lt;td>Camry&lt;/td>
+							&lt;td>2012&lt;/td>
+					&lt;/tr>
+					&lt;tr>
+							&lt;td>3&lt;/td>
+							&lt;td>Hyundai&lt;/td>
+							&lt;td>Elantra&lt;/td>
+							&lt;td>2010&lt;/td>
+					&lt;/tr>
+			&lt;/tbody>
+	&lt;/table>
+&lt;/div></code></pre>
+
+		</div>
+
+		<div class="half-width">
+			<h3>Full width Table with horizontal borders (Black background with white text)</h3>
+				<div class="table-container">
+					<table class="pure-table pure-table-horizontal full-width">
+					    <thead class="bg-black text-white">
+					        <tr>
+					            <th>#</th>
+					            <th>Make</th>
+					            <th>Model</th>
+					            <th>Year</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+					            <td>1</td>
+					            <td>Honda</td>
+					            <td>Accord</td>
+					            <td>2009</td>
+					        </tr>
+					        <tr>
+					            <td>2</td>
+					            <td>Toyota</td>
+					            <td>Camry</td>
+					            <td>2012</td>
+					        </tr>
+					        <tr>
+					            <td>3</td>
+					            <td>Hyundai</td>
+					            <td>Elantra</td>
+					            <td>2010</td>
+					        </tr>
+					    </tbody>
+					</table>
+				</div>
+<pre><code class="language-markup">&lt;div class="table-container">
+	&lt;table class="pure-table pure-table-horizontal full-width">
+			&lt;thead class="bg-black text-white">
+					&lt;tr>
+							&lt;th>#&lt;/th>
+							&lt;th>Make&lt;/th>
+							&lt;th>Model&lt;/th>
+							&lt;th>Year&lt;/th>
+					&lt;/tr>
+			&lt;/thead>
+			&lt;tbody>
+					&lt;tr>
+							&lt;td>1&lt;/td>
+							&lt;td>Honda&lt;/td>
+							&lt;td>Accord&lt;/td>
+							&lt;td>2009&lt;/td>
+					&lt;/tr>
+					&lt;tr>
+							&lt;td>2&lt;/td>
+							&lt;td>Toyota&lt;/td>
+							&lt;td>Camry&lt;/td>
+							&lt;td>2012&lt;/td>
+					&lt;/tr>
+					&lt;tr>
+							&lt;td>3&lt;/td>
+							&lt;td>Hyundai&lt;/td>
+							&lt;td>Elantra&lt;/td>
+							&lt;td>2010&lt;/td>
+					&lt;/tr>
+			&lt;/tbody>
+	&lt;/table>
+&lt;/div></code></pre>
+		</div>
+
+	</div>
+
+	<p>
+    Just give the <code class="language-markup">thead</code> the color variations classes and you're good to go.
+  </p>
+
+  <div class="alert-info">
+  	<div class="line1"></div>
+  	<div class="line2"></div>
+    <p>
+      Again, visit the Pattern Library demo page for a thorough demostration of the tables, their types, their color variations and how to use them. Keep in mind that you can use the Grid's classes on the tables as well.
+    </p>
+  </div>
+
+
+</section>

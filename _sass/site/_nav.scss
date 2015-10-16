@@ -1,0 +1,56 @@
+.site-nav {
+
+	ul {
+		margin-left: 0;
+		//padding-left: 0;
+	}
+
+	margin-top: 1em;
+	overflow: hidden;
+	background-color: yellow;
+	//padding-left: 2em;
+
+	li {
+		display: inline-block;
+		margin-right: 2em;
+		margin-bottom: 1em;
+		@include breakpoint(medium) {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		//border-bottom: 3px solid darken($bg-color, 40%);
+		padding-bottom: .2em;
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		
+		&:hover {
+			color: darken($bg-color, 40%);
+			.border2 {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.border1, .border2 {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		height: 4px;
+	}
+	
+	.border1 {
+		background: darken($bg-color, 40%);
+		left: 0;
+	}
+
+	.border2 {
+		background: $bg-color;
+		right: 0;
+		margin-right: 100%;
+		transition: all 1s ease-in;
+	}
+
+}

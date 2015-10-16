@@ -1,0 +1,57 @@
+<section id="color_schemes">
+
+  <h3>Color Schemes</h3>
+
+  <p>
+    This theme is called Yellowblue because (yes, you guessed right) its color scheme is based on the colors yellow and blue.
+  </p>
+
+  <p>
+    However, this doesn't mean that you are restricted to use the theme's default colors.
+  </p>
+
+  <p>
+    By the power of <a href="http://sass-lang.com/">Sass</a> and <a href="http://sass-lang.com/guide#topic-2">Sass variables</a> in particular, Yellowblue privides you with 4 additional color scheme presets. These presets are named after each schemes's dominant color; green, red, gray and white.
+  </p>
+
+  <p>
+    You can change the color scheme by going to the <code class="language-powershell">css/main.scss</code> file. There, the line we are interested in. looks like this:
+  </p>
+
+<pre><code class="language-scss">"color_schemes/yellowblue",</code></pre>
+
+  <p>
+    See the <code>yellowblue</code> word? That's the default color scheme preset. If you want for instance the green preset, change the line so it looks like this:
+  </p>
+
+<pre><code class="language-scss">"color_schemes/green",</code></pre>
+
+  <p>
+    For the red preset:
+  </p>
+
+<pre><code class="language-scss">"color_schemes/red",</code></pre>
+
+  <p>
+    Pretty easy, huh? By changing one single word, your site's color scheme changes instantly.
+  </p>
+
+  <p>
+    Again, the available color schemes are: <code class="language-powershell">yellowblue</code> , <code class="language-powershell">green</code>, <code class="language-powershell">red</code>, <code class="language-powershell">gray</code> and <code class="language-powershell">white</code>.
+  </p>
+
+  <p>
+    If you want to have a look at the color schemes' code, or feel confident enough to  tinker with it, the files are located inside the <code class="language-powershell">_sass/color_schemes</code> folder. For the green preset the file is called <code class="language-powershell">_green.scss</code>. For the red preset the file is called <code class="language-powershell">_red.scss</code>, etc.
+  </p>
+
+  <p>
+    If you want to use your own custom color scheme and name it, say, <code class="language-powershell">my_color_scheme</code>, just create a <code class="language-powershell">_my_color_scheme.scss</code></code> file in the <code class="language-powershell">_sass/color_schemes</code> folder. Now <strong>copy and paste the code from another color scheme file</strong> and start changing the variables and/or adding/removing CSS rules.
+  </p>
+
+  <p>
+    In order for your color scheme to take effect, go to the <code class="language-powershell">css/main.scss</code> and change the line with the color schemes, like so:
+  </p>
+
+<pre><code class="language-scss">"color_schemes/my_color_scheme",</code></pre>
+
+</section>

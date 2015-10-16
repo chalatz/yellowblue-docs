@@ -1,0 +1,201 @@
+  <section id="modules">
+
+  <h3>Modules</h3>
+
+  <p>
+    Yellowblue lets you use visual blocks, or modules, that you can place just about anywhere, like the sidebar, the content area, the main column, etc.
+  </p>
+
+  <p>
+    You can have modules that can go in the sidebar, two, three or four modules side by side, modules with blue headings and yellow font, modules with yellow headings and blue font... well you can have them almost any way you want them.
+  </p>
+
+  <h4>↪ Headings Color Variations</h4>
+
+  <p>
+    Yellowblue offers some ready to use color variations for the headings of your modules. You can apply them by using the following classes:
+  </p>
+
+  <ul>
+    <li>
+      <strong>blue-var:</strong> blue background, yellow text
+    </li>
+    <li>
+      <strong>light-blue-var:</strong> light-blue background, black text
+    </li>
+    <li>
+      <strong>yellow:</strong> yellow background, black text
+    </li>
+  </ul>
+
+  <p>
+    See below the modules with their color variations and the code that creates them:
+  </p>
+
+  <div class="row">
+
+    <div class="half-width">
+      <div class="module">
+        <header class="block-module-header">
+          <h3>Default</h3>
+        </header>
+        <div class="module-body">
+          <p>No color variation.</p>
+        </div>
+      </div>
+<pre><code class="language-markup">&lt;div class="module">
+  &lt;header class="block-module-header">
+    &lt;h3>Default&lt;/h3>
+  &lt;/header>
+  &lt;div class="module-body">
+    &lt;p>No color variation.&lt;/p>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+
+    <div class="half-width">
+      <div class="module blue-var">
+        <header class="block-module-header">
+          <h3>Blue</h3>
+        </header>
+        <div class="module-body">
+          <p>Blue color variation. Uses the class <code class="language-markup">blue-var</code></p>
+        </div>
+      </div>
+<pre><code class="language-markup">&lt;div class="module blue-var">
+  &lt;header class="block-module-header">
+    &lt;h3>Blue&lt;/h3>
+  &lt;/header>
+  &lt;div class="module-body">
+    &lt;p>Blue color variation. Uses the class &lt;code class="language-markup">blue-var&lt;/code>&lt;/p>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="half-width">
+      <div class="module light-blue-var">
+        <header class="block-module-header blue-var">
+          <h3>Light Blue</h3>
+        </header>
+        <div class="module-body">
+          <p>Light Blue color variation. Uses the class <code class="language-markup">light-blue-var</code></p>
+        </div>
+      </div>
+      <pre><code class="language-markup">&lt;div class="module light-blue-var">
+        &lt;header class="block-module-header">
+          &lt;h3>Light Blue&lt;/h3>
+        &lt;/header>
+        &lt;div class="module-body">
+          &lt;p>Light Blue color variation. Uses the class &lt;code class="language-markup">light-blue-var&lt;/code>&lt;/p>
+        &lt;/div>
+      &lt;/div> </code></pre>
+    </div>
+
+    <div class="half-width">
+      <div class="module yellow-var">
+        <header class="block-module-header">
+          <h3>Yellow</h3>
+        </header>
+        <div class="module-body">
+          <p>Yellow color variation. Uses the class <code class="language-markup">yellow-var</code></p>
+        </div>
+      </div>
+      <pre><code class="language-markup">&lt;div class="module yellow-var">
+        &lt;header class="block-module-header">
+          &lt;h3>Yellow&lt;/h3>
+        &lt;/header>
+        &lt;div class="module-body">
+          &lt;p>Yellow color variation. Uses the class &lt;code class="language-markup">yellow-var&lt;/code>&lt;/p>
+        &lt;/div>
+      &lt;/div> </code></pre>
+
+    </div>
+
+  </div>
+
+  <div class="alert-info">
+  	<div class="line1"></div>
+  	<div class="line2"></div>
+  	<h3>Modules widths</h3>
+  	<p>
+  	  The Grid's width classes can be on applied on modules too. If for example, you want a half-width module, just apply the <code>half-width</code> class on your module's opening tag, like so: <code class="language-markup">&lt;div class="module half-width"></code>
+  	</p>
+  </div>
+
+  <h4>↪ Customize your modules</h4>
+
+  <p>
+    Yellowblue might offer you some reade-to-use color variations for your modules, but that doesn't mean that you cannot use your own. Remember the <a href="#variations">Color Variations</a> section? You can use these classes to give to your modules' headings your own color combinations.
+  </p>
+
+  <p>
+    Have look at the following examples to get an idea of how to customize your modules:
+  </p>
+
+  <div class="row">
+
+    <div class="half-width">
+      <div class="module">
+        <header class="block-module-header">
+          <h3 class="bg-orange text-white">Orange / White</h3>
+        </header>
+        <div class="module-body">
+          <p>Header with orange background and white text.</p>
+        </div>
+      </div>
+<pre><code class="language-markup">&lt;div class="module">
+  &lt;header class="block-module-header">
+    &lt;h3 class="bg-orange text-white">
+      Orange / White
+    &lt;/h3>
+  &lt;/header>
+  &lt;div class="module-body">
+    &lt;p>
+      Header with orange background and white text.
+    &lt;/p>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+
+    <div class="half-width">
+      <div class="module">
+        <header class="block-module-header">
+          <h3 class="bg-dark-red text-yellow">Dark Red / Yellow</h3>
+        </header>
+        <div class="module-body">
+          <p>Header with dark-red background and yellow text.</p>
+        </div>
+      </div>
+<pre><code class="language-markup">&lt;div class="module">
+  &lt;header class="block-module-header">
+    &lt;h3 class="bg-dark-red text-yellow">
+      Dark Red / Yellow
+    &lt;/h3>
+  &lt;/header>
+  &lt;div class="module-body">
+    &lt;p>
+      Header with dark-red background and yellow text.
+    &lt;/p>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+
+  </div>
+
+  <p>
+    Just give the <code class="language-markup">h3</code> the color variations classes and you're good to go.
+  </p>
+
+  <div class="alert-info">
+  	<div class="line1"></div>
+  	<div class="line2"></div>
+    <p>
+      Again, visit the Pattern Library demo page for a thorough demostration of the modules, their color variations and how to use them. Keep in mind that you can use the Grid's classes on the modules as well.
+    </p>
+  </div>
+
+</section>

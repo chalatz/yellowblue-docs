@@ -1,0 +1,263 @@
+<section id="icons">
+
+  <h3>Icons</h3>
+
+  <p>
+    Yellowblue uses <a href="https://icomoon.io/">Icomoon's</a> free icon set. This icon set is consisted solely of SVG shapes.
+  </p>
+
+  <p>
+    Select <code>Icons</code> from the menu to have a look at all the available icons, along with their names.
+  </p>
+
+  <p>
+    Let's use an icon, say, the <code>icon-cool</code>:
+  </p>
+
+  <p>
+    <div class="svg-container">
+      <svg class="icon icon-cool" viewBox="0 0 32 32">
+			  <use xlink:href="#icon-cool"></use>
+		  </svg>
+    </div> The default icon.
+  </p>
+
+  <p>
+    And the code:
+  </p>
+
+<pre><code class="language-markup">&lt;div class="svg-container">
+  &lt;svg class="icon icon-cool" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div> The default icon.</code></pre>
+
+  <p>
+    Noticed the <code>icon-cool</code> in the <code>svg</code> and <code>use</code> tags? As you very well guessed, this is the name of the icon. Also, the <code>svg</code> tag is wrapped inside a container, with a class of <code class="language-markup">svg-container</code>. If this container was not there, you would have an icon that would take up the entire width of the icon's container. If that is what you want, you can omit the svg-container.
+  </p>
+
+  <p>
+    Yellowblue's icons come in different sizes and colors.
+  </p>
+
+  <p>
+    Along with the default size, you can apply large or larger sizes. See for yourself:
+  </p>
+
+  <p>
+    <div class="svg-container">
+      Default:
+      <svg class="icon icon-cool" viewBox="0 0 32 32">
+			  <use xlink:href="#icon-cool"></use>
+		  </svg>
+    </div>
+
+    <div class="svg-container-large">
+      Large:
+      <svg class="icon icon-cool" viewBox="0 0 32 32">
+			  <use xlink:href="#icon-cool"></use>
+		  </svg>
+    </div>
+
+    <div class="svg-container-larger">
+      Larger:
+      <svg class="icon icon-cool" viewBox="0 0 32 32">
+			  <use xlink:href="#icon-cool"></use>
+		  </svg>
+    </div>
+  </p>
+
+  <p>
+    The code:
+  </p>
+
+<pre><code class="language-markup">&lt;div class="svg-container">
+  Default:
+  &lt;svg class="icon icon-cool" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div>
+
+&lt;div class="svg-container-large">
+  Large:
+  &lt;svg class="icon icon-cool" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div>
+
+&lt;div class="svg-container-larger">
+  Larger:
+  &lt;svg class="icon icon-cool" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div></code></pre>
+
+  <p>
+    For the default icon, you apply the <code class="language-markup">svg-container</code> class to the icon's container. For the large and larger icons, you apply, respectively, the <code class="language-markup">svg-container-large</code> and the <code class="language-markup">svg-container-larger</code> class.
+  </p>
+
+  <p>
+    You can also apply colors to your icons. You can use all the available colors from the <a href="#variations">Color Variations</a> section.
+  </p>
+
+  <p>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-blue" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-light-blue" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-dark-blue" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-green" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-light-green" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-dark-green" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-orange" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-light-orange" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-dark-orange" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-red" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-light-red" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-dark-red" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-gray" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-light-gray" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-dark-gray" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+    <div class="svg-container-large">
+      <svg class="icon icon-cool icon-yellow" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div>
+
+    <p>
+      Here is the code for the green icons:
+    </p>
+
+<pre><code class="language-markup">&lt;div class="svg-container-large">
+  &lt;svg class="icon icon-cool icon-green" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div>
+&lt;div class="svg-container-large">
+  &lt;svg class="icon icon-cool icon-light-green" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div>
+&lt;div class="svg-container-large">
+  &lt;svg class="icon icon-cool icon-dark-green" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div>  </code></pre>
+
+  <p>
+    If you want a blue icon, just add the <code class="language-markup">icon-blue</code> class to the <code class="language-markup">svg</code> tag of the icon. For a light-red icon, add the <code class="language-markup">icon-light-red</code>. In other words, you prefix the color variations with <code class="language-markup">icon-</code>.
+  </p>
+
+  <p>
+    You can have bordered icons as well, using the classes <code class="language-markup">bordered</code>, <code class="language-markup">rounded</code> and <code class="language-markup">circled</code>, on the icon's container.
+  </p>
+
+  <p>
+    An example:
+  </p>
+
+  <p>
+    <div class="svg-container-large bordered">
+      <svg class="icon icon-cool icon-green" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div> Bordered,
+    <div class="svg-container-large circled">
+      <svg class="icon icon-cool icon-dark-blue" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div> Circled,
+    <div class="svg-container-large rounded">
+      <svg class="icon icon-cool icon-red" viewBox="0 0 32 32">
+        <use xlink:href="#icon-cool"></use>
+      </svg>
+    </div> Rounded
+  </p>
+
+  <p>
+    The code:
+  </p>
+
+<pre><code class="language-markup">&lt;div class="svg-container-large bordered">
+  &lt;svg class="icon icon-cool icon-green" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div> Bordered,
+&lt;div class="svg-container-large circled">
+  &lt;svg class="icon icon-cool icon-dark-blue" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div> Circled,
+&lt;div class="svg-container-large rounded">
+  &lt;svg class="icon icon-cool icon-red" viewBox="0 0 32 32">
+    &lt;use xlink:href="#icon-cool">&lt;/use>
+  &lt;/svg>
+&lt;/div> Rounded  </code></pre>
+
+  <p>
+    As you can see, you can mix and match, and have say, a green large icon with circled border, or a default sized dark-orange icon with roounded border.
+  </p>
+
+  <p>
+    Again, don't forget to check the <code>Icons</code> section in the Pattern Library section of the demo page.
+  </p>
+
+</section>

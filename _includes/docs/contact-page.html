@@ -1,0 +1,76 @@
+<section id="contact-page">
+
+  <h3>Contact Page</h3>
+
+  <p>
+    Jekyll, like any static site generator produces, well, static sites. This means that a static site is mainly plain old HTML. And HTML cannot send emails. Server-side languages, like PHP, Ruby or Python can send emails.
+  </p>
+
+  <p>
+    Since we do not (and do not want to) have the luxury of a server-side language, in order to have a contact form, we need to rely on third party services. Luckily, there are more than one such services which help us receive contact emails, with minimum effort and time spent.
+  </p>
+
+  <p>
+    Yellowblue uses such a service, called <a href="http://formspree.io/">Formspree</a> and provides you with a ready made contact form. You can see it by clicking on the menu's 'Contact' link in the demo site.
+  </p>
+
+  <p>
+    In order for your contact form to work, it needs a little bit of configuration. After all, you have to at least provide your own email address, haven't you?
+  </p>
+
+  <p>
+    Open the <code class="language-markup">contact/index.html</code> file and locate this line:
+  </p>
+
+<pre><code class="language-markup">&lt;form action="http://formspree.io/your@email.com" method="POST"></code></pre>
+
+  <p>
+    and replace <code class="language-markup">your@email.com</code> with your own email address.
+  </p>
+
+  <p>
+    A couple more changes;
+  </p>
+
+  <p>
+    Notice the page's Front Matter section:
+  </p>
+
+<pre><code class="language-yaml">---
+layout: page
+title: Contact Me
+site-url: "http://localhost:4000"
+---</code></pre>
+
+  <p>
+    You can change the <code class="language-markup">title</code> variable, that's ,duh, the page's title, or just leave it as it is.
+  </p>
+
+  <p>
+    As for the <code class="language-markup">site-url</code> variable, you assign it to the site's URL. The variable is set to the default Jekyll's URL while working locally and you probably will leave it there while testing the contact form on your local machine. This variable helps Formspree to redirect the user back to your site, after the form has been submitted. So when your site goes live, <strong>do not forget to change the <code class="language-markup">site-url</code> variable!</strong>
+  </p>
+
+  <p>
+    See this line?
+  </p>
+
+<pre><code class="language-ruby">&#123;% assign response = '/thank-you' | prepend: page.site-url %}</code></pre>
+
+  <p>
+    In this line we are preparing Formspree to return to a page with a permalink of <code class="language-markup">thank-you</code>, after a successful form submission.
+  </p>
+
+  <p>
+    The code for the thank you page is inside the <code class="language-markup">thank-you/index.html</code> file. You can leave it or modify it to your own liking.
+  </p>
+
+  <div class="alert-warning">
+  	<div class="line1"></div>
+  	<div class="line2"></div>
+  	<h3>Remember!</h3>
+  	<p>Before unleashing the form into the wild, test it yourself. The first time you will use it, Formspree will ask you to confirm your email address.</p>
+  </div>
+
+  <p>Lastly, do not forget to visit <a href="http://formspree.io/">Formspree's website</a>, for further information and documentation.</p>
+
+</section>

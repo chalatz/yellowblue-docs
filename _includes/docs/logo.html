@@ -1,0 +1,33 @@
+<section id="logo">
+
+  <h3>The Logo</h3>
+
+  <p>
+    You can customize the site's logo by opening <code class="language-markup">_includes/logo.html</code>
+  </p>
+
+  <p>
+    Once there, you can change the text of the logo, use an image, or add whatever you want.
+  </p>
+
+  <p>
+    If you have an image, place the file preferably in the <code>images</code> folder and just use an <code class="language-markup">&lt;img></code> tag. For example, if your image file is named <code>logo.png</code>, your entire <code>logo.html</code> file will look like this:
+  </p>
+
+  <pre><code class="language-markup">&lt;section class="site-logo">
+   &lt;a class="site-title-link" href="/">
+       &lt;img src="/images/logo.png" alt="Logo alt text">
+       &lt;div class="a-left-line">&lt;div class="runner">&lt;/div>&lt;/div>
+   &lt;/a>
+   &lt;div class="site-slogan">A Jekyll Theme&lt;/div>
+   &lt;div class="a-right-line">&lt;/div>
+&lt;/section></code></pre>
+
+<p>
+  YB also offers you the option to have a site slogan. You can change it by modifying the text in the div with the class name of <code class="language-markup">site-slogan</code>. If you do not want to use a slogan, just delete the following lines altogether:
+</p>
+
+<pre><code class="language-markup">&lt;div class="site-slogan">A Jekyll Theme&lt;/div>
+&lt;div class="a-right-line">&lt;/div></code></pre>
+
+</section>

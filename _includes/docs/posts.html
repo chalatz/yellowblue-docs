@@ -1,0 +1,164 @@
+<section id="posts">
+
+  <h3>Posts</h3>
+
+  <p>
+    The posts will be the heart and soul of your (and any) blog. Therefore, I have made an extra effort while writing the code for the posts.
+  </p>
+
+  <p>
+    Yellowblue's posts, apart from the basic features, provide you with some extra features which make the overall navigating and reading experience, a pleasant and effortless process.
+  </p>
+
+  <p>
+    Some of the posts' features, are:
+  </p>
+
+  <ul>
+    <li>Categories</li>
+    <li>Tags</li>
+    <li>Date of publishing</li>
+    <li>Author</li>
+    <li>Hero image</li>
+    <li>Permalink (choose your own URL for your post)</li>
+    <li>Comments (enable or disable at will)</li>
+    <li>Navigation links to previous / next post</li>
+    <li>Distraction free (the sidebar is not visible while on post pages)</li>
+    <li>Edit the post's info for sitemap.xml. Choose if you want the post included in sitemap.xml or not.</li>
+  </ul>
+
+  <section class="subsection">
+
+    <h4>↪ Writing Posts</h4>
+
+    <p>
+      Writing posts in Jekyll requires you to know a little about about <a href="http://jekyllrb.com/docs/frontmatter/">Front Matter</a>. Don't worry though; even a quick read through <a href="http://jekyllrb.com/docs/frontmatter/">Jekyll's documentation about Front Matter</a>, will get you up and running in no time.
+    </p>
+
+    <p>
+      Now, the actual process of writing posts ia also <a href="http://jekyllrb.com/docs/posts/">very well documented</a>. Please make sure to read both about <a href="http://jekyllrb.com/docs/frontmatter/">Front Matter</a> and <a href="http://jekyllrb.com/docs/posts/">writing posts</a>, in order to get a solid grasp on writing posts in Jekyll.
+    </p>
+
+    <p>
+      The necessary variables for a post, are the layout, the title and the date. Below you can see a basic post:
+    </p>
+
+<pre><code class="language-yaml">---
+layout: post
+title:  "Welcome to Yellowblue!"
+date:   2012-06-16 18:19:27
+---
+Post body goes here</code></pre>
+
+  <p>
+    Note that the post body can be written in <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, HTML, or even in both of them.
+  </p>
+
+  <div class="alert-info">
+  	<div class="line1"></div>
+  	<div class="line2"></div>
+  	<p>The best way to get an idea about how posts are written, is to just check the theme's posts in the <code class="language-bash">_posts</code> folder.</p>
+  </div>
+
+  <h4>↪ Permalinks</h4>
+
+  <p>
+    <a href="http://jekyllrb.com/docs/permalinks/">Permalinks</a> can be used in Yellowblue, as in any Jekyll site. Again, Jekyll provides <a href="http://jekyllrb.com/docs/permalinks/">detailed documentation</a> about how to use permalinks. Just make sure that each post has a unique permalink!
+  </p>
+
+  <h4>↪ Hero images</h4>
+
+  <p>
+    If you have an image, say <code>my_hero_image.jpg</code> and want to use it as a hero image for your post, the first thing to do is copy the image into the <code class="language-bash">images</code> folder.
+  </p>
+
+  <p>
+    If you want a lower resolution version of the image, say <code>my_hero_image_low_res.jpg</code>, to appear in the post's teaser place the image into the <code class="language-bash">images</code> folder.
+  </p>
+
+  <p>
+    If you want the image to link to a larger image, place in the <code class="language-bash">images</code> folder a larger version of the image, say <code>my_hero_image_large.jpg</code>.
+  </p>
+
+  <p>
+    A post with a hero image, will look like this:
+  </p>
+
+<pre><code class="language-yaml">---
+layout: post
+title:  "Welcome to Yellowblue!"
+date:   2012-06-16 18:19:27
+hero: images/my_hero_image.jpg
+hero_high: images/my_hero_image_large.jpg
+hero_low: images/my_hero_image_low_res.jpg
+hero_alt: My Hero Image
+---
+Post body goes here</code></pre>
+
+  <p>
+    As you can see, the variables regarding hero images, are the following:
+  </p>
+
+  <div class="table-container">
+			<table class="pure-table pure-table-bordered">
+			    <thead>
+			        <tr>
+			            <th>Variable</th>
+			            <th>Value</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>hero</td>
+			            <td>The path to the image file</td>
+			        </tr>
+			        <tr>
+			            <td>hero_high</td>
+			            <td>The path to the image file of a high resolution version. The image will be used as a link from the original hero image.</td>
+			        </tr>
+			        <tr>
+			            <td>hero_low</td>
+			            <td>The path to the image file of a low resolution version. The image will be used in the post teaser.</td>
+			        </tr>
+              <tr>
+                <td>hero_alt</td>
+                <td>The alternative text to the image. It will be included in the images markup.</td>
+              </tr>
+			    </tbody>
+			</table>
+
+    <h4>↪ Comments</h4>
+
+    <p>
+      Yellowblue uses <a href="https://disqus.com/">Disqus</a>, a widely popular comments service. In order to you use it, you have to create an account there.
+    </p>
+
+    <p>
+      By default, comments in the YB theme are disabled and you get to determine if a post will accept comments or not.
+    </p>
+
+    <p>
+      If you want to have the comments enabled by default, just head over to <code class="language-bash">_config.yml</code> and change the line <code class="language-bash">comments: false</code> to <code class="language-bash">comments: true</code>.
+    </p>
+
+    <p>
+      If you want to have the comments disabled by default, but you want to choose which posts will allow comments, just add the line <code class="language-bash">comments: true</code> in your post's Front Matter section.
+    </p>
+
+    <p>
+      If you want to have the comments enables by default, but you want to choose which posts will not allow comments, just add the line <code class="language-bash">comments: false</code> in your post's Front Matter section. Also make sure that in <code class="language-bash">_config.yml</code> the <code>comments</code> variable is set to <code>true</code>.
+    </p>
+
+    <p>
+      The code for the comments resides in <code class="language-bash">_includes/comments.html</code>. The code is provided by Disqus and the comments (for the code) are quite explanatory. All you need to change, is the Disqus username. Yelloblue's username is <code>yellowblueeu</code>, so all you have to do in the following piece of code:
+    </p>
+
+    <pre><code class="language-javascript">var disqus_shortname = 'yellowblueeu'; // required: replace example with your forum shortname</code></pre>
+
+  <p>
+    is to change <code>yellowblueeu</code> with your own Disqus username. And that's it. Now your site can support comments!
+  </p>
+
+  </section>
+
+</section>
